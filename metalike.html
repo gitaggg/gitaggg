@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Your Stay | Comfort Suites at Pokhara Lakeside</title>
+    <meta name="description" content="Book your stay at Comfort Suites at Pokhara Lakeside for a luxurious lakeside experience in Pokhara. Enjoy convenient online booking and exclusive offers.">
+    <meta name="keywords" content="book apartment, Comfort Suites, Pokhara Lakeside booking, luxury apartment booking, lake view apartments">
+    <link rel="stylesheet" href="script.css">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LodgingReservation",
+          "reservationStatus": "https://schema.org/Confirmed",
+          "reservationFor": {
+            "@type": "ApartmentComplex",
+            "name": "Comfort Suites at Pokhara Lakeside",
+            "url": "https://example.com/booknow.html"
+          },
+          "underName": {
+            "@type": "Person",
+            "name": "Guest Name"
+          },
+          "startDate": "2024-11-03T12:00",
+          "endDate": "2024-11-10T11:00"
+        }
+        </script>
+        
+
+    
+
+<style>
+/* Container styling */
+/* look css file */
+</style>
+</head>
+<body>
+    
+
+
+<form onsubmit="bookApartment(); return false;"> 
+    <label>Check-in: <input type="date" id="checkin" required></label>
+    <label>Check-out: <input type="date" id="checkout" required></label>
+    <label for="guests">Number of Guests:</label>
+    <select id="guests">
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+    </select>
+    <label for="guestschoice">Apartment type:</label>
+    <select id="guestschoice">
+        <option value="One Bedroom Apartment">One Bedroom Apartment</option>
+        <option value="Two Bedroom Apartment">Two Bedroom Apartment</option>
+    </select>
+    <label>WhatsApp Number with country code: <input type="text" id="whatsappnumber" required></label>
+    <label>write your Email <input type="email" id="email" required></label>
+    <label>Special Request: <textarea id="specialrequest"></textarea></label>
+    <button type="submit">Book Now</button>
+</form>
+<button><a href="https://wa.me/9779745281226?">Whatsapp us at +9779745281226</a></button>
+
+<script>
+function bookApartment() {
+    const checkin = document.getElementById('checkin').value;
+    const checkout = document.getElementById('checkout').value;
+    const guests = document.getElementById('guests').value;
+    const guestschoice = document.getElementById('guestschoice').value;
+    const whatsappnumber = document.getElementById('whatsappnumber').value;
+    const specialrequest = document.getElementById('specialrequest').value;
+    const email=document.getElementById('email').value;
+    alert ("whatsapp at +9779745281226 or sujansubedi2060@gmail.com for much information");
+    if (!checkin || !checkout || !guests || !whatsappnumber) {
+        alert("Please complete all required fields.");
+        return;
+    }
+
+    const message = `
+        Booking request!
+        Check-in: ${checkin}
+        Check-out: ${checkout}
+        Guests: ${guests} 
+        Apartment Type: ${guestschoice}
+        WhatsApp Number: ${whatsappnumber}
+        Special Request: ${specialrequest}
+        Email: ${email}
+    `;
+
+    // Encode the message and add a unique timestamp to prevent caching issues
+    const whatsappMessage = encodeURIComponent(message.trim());
+    const timestamp = new Date().getTime(); // Get current timestamp
+    const whatsappURL = `https://wa.me/9779745281226?text=${whatsappMessage}&t=${timestamp}`;
+
+    window.open(whatsappURL, "_blank");
+}
+const emailRecipient = "sujansubedi2060@gmail.com"; // Replace with the email to receive bookings
+    const emailSubject = encodeURIComponent("New Apartment Booking");
+    const emailBody = encodeURIComponent(message);
+    const mailtoURL = `mailto:${emailRecipient}?subject=${emailSubject}&body=${emailBody}`;
+    window.open(mailtoURL, "_blank");
+
+</script>
+</body>
+</html>

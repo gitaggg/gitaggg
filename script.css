@@ -1,0 +1,527 @@
+
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        h1, h2, p {
+            margin: 0 0 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #1a73e8;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Hero section */
+        .hero {
+            background: url('background.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .kitchen {
+            background: url('kitchen.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .painting{
+            
+                background: url('nicebalcony.jpeg') no-repeat center center;
+                background-size: cover;
+                color: #fff;
+                padding: 100px 20px;
+                text-align: center;
+            }
+            .nicebalcony  {
+                background: url('balcony.jpg') no-repeat center center;
+                background-size: cover;
+                color: #fff;
+                padding: 100px 20px;
+                text-align: center;
+            }
+            .bathroom {
+                background: url('bathroom.jpg') no-repeat center center;
+                background-size: cover;
+                color: #fff;
+                padding: 100px 20px;
+                text-align: center;
+            }
+          
+                .readbooks {
+                    background: url('read%20books.jpg') no-repeat center center;
+                    background-size: contain; /* Keeps the image’s aspect ratio */
+                    color: #fff;
+                    padding: 100px 20px;
+                    text-align: center;
+                    width: 100%;
+                    height: 100vh; /* Full viewport height */
+                    background-attachment: fixed; /* Optional: keeps the image fixed on scroll */
+                }
+                
+                /* Additional adjustments for smaller screens */
+                @media (max-width: 768px) {
+                    .readbooks {
+                        background-size: cover; /* Switches to cover on mobile for a full fit */
+                        height: auto; /* Allows height to adapt */
+                        min-height: 100vh; /* Ensures it fills the viewport */
+                    }
+                }
+                * Ensures full viewport height */
+            
+            
+            .view
+            {
+                background: url('view.jpg') no-repeat center center;
+                background-size: cover;
+                color: #fff;
+                padding: 100px 20px;
+                text-align: center;
+            }
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        /* Apartment Details */
+        .apartment-details {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .apartment-details img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .apartment-info {
+            flex: 1;
+        }
+        
+        /* Booking Form */
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .booking-form input, .booking-form select, .booking-form button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .booking-form button {
+            background-color: #1a73e8;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .booking-form button:hover {
+            background-color: #155bb5;
+        }
+        
+        /* About and Contact Sections */
+        .section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+     
+        /* Basic styling for the carousel */
+        .carousel-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .testimonial {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .testimonial p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .testimonial h4 {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Carousel navigation buttons */
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        
+        /* Form field styling */
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        input[type="date"],
+        input[type="number"],
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        
+        /* Textarea specific styling */
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        /* Button styling */
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 480px) {
+            form {
+                padding: 15px;
+            }
+        }
+        a{
+        text-decoration: none;
+        color: azure;
+        }
+          /* General Styles */
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background-color: #1a73e8;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            position: relative;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a, .book-now-btn {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .book-now-btn {
+            background-color: #ff6347;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .book-now-btn:hover {
+            background-color: #e04e39;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px;
+            transition: 0.4s;
+        }
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            background-color: #1a73e8;
+            padding: 20px;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .mobile-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+            }
+            .book-now-btn {
+                margin-left: auto;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/random/1920x600/?luxury-apartment') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .testimonial {
+            margin-bottom: 20px;
+        }
+        .testimonial h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .testimonial p {
+            font-size: 16px;
+            color: #555;
+        }
+         /* Testimonials Section */
+         .carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .testimonial {
+            min-width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .testimonial h4 {
+            margin-top: 10px;
+            color: #333;
+            font-weight: bold;
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            cursor: pointer;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+
+        /* Booking Form Styles */
+        .booking-form {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .booking-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .booking-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .booking-form input, .booking-form select, .booking-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+        .booking-form button {
+            background-color: #1a73e8;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr; /* Default to one column */
+            gap: 10px;
+            width: 100%;
+            max-width: 800px;
+        }
+        
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            position: relative;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        
+        /* Mobile Transition Effect */
+        @media (max-width: 600px) {
+            .gallery-item {
+                opacity: 0.9;
+            }
+        
+            .gallery-item:hover {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+        }
+        
+        /* Responsive layout: change to 2 columns on medium screens, 3 on large screens */
+        @media (min-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (min-width: 900px) {
+            .gallery {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        
+            .gallery-item:hover img {
+                transform: scale(1.05);
+            }
+        }
+        
+
+
+
+    

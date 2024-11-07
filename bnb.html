@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Comfort Suites at Pokhara Lakeside | Luxury Apartments in Nepal</title>
+    <meta name="description" content="Comfort Suites at Pokhara Lakeside  offers luxurious, fully-equipped apartments in the heart of Pokhara, Nepal. Enjoy stunning lake views and premium amenities.">
+    <meta name="keywords" content="Comfort Suites, Pokhara Lakeside, luxury apartments, lake view apartments, Pokhara accommodation, Nepal apartments">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ApartmentComplex",
+          "name": "Comfort Suites at Pokhara Lakeside",
+          "url": "https://example.com",
+          "description": "Comfort Suites offers luxury lakeside apartments in Pokhara with top amenities and stunning views.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Lakeside, Pokhara",
+            "addressLocality": "Pokhara",
+            "addressRegion": "Gandaki Province",
+            "postalCode": "33700",
+            "addressCountry": "NP"
+          },
+          "telephone": "+9779846481293",
+          "image": "https://example.com/images/comfort-suites.jpg",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "28.2096",
+            "longitude": "83.9856"
+          },
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi" },
+            { "@type": "LocationFeatureSpecification", "name": "Lake view" },
+            { "@type": "LocationFeatureSpecification", "name": "24/7 Security" },
+            { "@type": "LocationFeatureSpecification", "name": "Room Service" }
+          ]
+        }
+        </script>
+        
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        nav {
+            background-color: #1a73e8;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            position: relative;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a, .book-now-btn {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .book-now-btn {
+            background-color: #ff6347;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .book-now-btn:hover {
+            background-color: #e04e39;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px;
+            transition: 0.4s;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            background-color: #1a73e8;
+            padding: 20px;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .mobile-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/random/1920x600/?luxury-apartment') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .testimonial {
+            margin-bottom: 20px;
+        }
+        .testimonial h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .testimonial p {
+            font-size: 16px;
+            color: #555;
+        }
+         /* Testimonials Section */
+         .carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .testimonial {
+            min-width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .testimonial h4 {
+            margin-top: 10px;
+            color: #333;
+            font-weight: bold;
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            cursor: pointer;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+
+        /* Booking Form Styles */
+        .booking-form {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .booking-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .booking-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .booking-form input, .booking-form select, .booking-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+        .booking-form button {
+            background-color: #1a73e8;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .whatsapp-contact {
+    position: fixed; /* Fixes the button in place */
+    bottom: 20px; /* Position it at the bottom of the page */
+    right: 20px; /* Position it to the right side of the page */
+    background-color: #25D366; /* WhatsApp green */
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    z-index: 1000; /* Ensures it appears above other elements */
+}
+
+.whatsapp-icon {
+    width: 20px; /* Size of the WhatsApp icon */
+    margin-right: 8px; /* Space between the icon and the text */
+    vertical-align: middle;
+}
+
+    </style>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+<!-- Add this code in your layout (e.g., footer or header) -->
+<div class="whatsapp-contact">
+    <a href="https://wa.me/9779745281226" target="_blank">
+        <img src="whatsappmetamarkzukerburg.png" alt="WhatsApp" class="whatsapp-icon">
+        Chat with us on WhatsApp
+    </a>
+</div>
+
+<!-- Navigation -->
+<nav>
+    <div class="logo">Comfort Suites Apartment</div>
+    <div class="nav-links">
+        <a href="bnb.html">Home</a>
+        <a href="abouttypes.html">About Us</a>
+        <a href="apartmenttypes.html">Apartment Types</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="map.html">MAP</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+    <a href="metalike.html" class="book-now-btn">Book Now</a>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="bnb.html">Home</a>
+    <a href="abouttypes.html">About Us</a>
+    <a href="apartmenttypes.html">Apartment Types</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="map.html">MAP</a>
+    <a href="gallery.html">Gallery</a>
+</div>
+<div class="hero" id="home">
+    <h1 style="color:#1a73e8;"><strong>
+       <!-- actress -->
+    Welcome to Comfort Suites Apartment</strong></h1>
+    <p style="color: #1a73e8;">Experience luxury and comfort at your home away from home.</p>
+</div>
+<form onsubmit="bookApartment(); return false;"> 
+    <label>Check-in: <input type="date" id="checkin" required></label>
+    <label>Check-out: <input type="date" id="checkout" required></label>
+    <label for="guests">Number of Guests:</label>
+    <select id="guests">
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+    </select>
+    <label for="guestschoice">Apartment type:</label>
+    <select id="guestschoice">
+        <option value="One Bedroom Apartment">One Bedroom Apartment</option>
+        <option value="Two Bedroom Apartment">Two Bedroom Apartment</option>
+    </select>
+    <label>WhatsApp Number with country code: <input type="text" id="whatsappnumber" required></label>
+    <label>write your Email <input type="text" id="email" required></label>
+    <label>Special Request: <textarea id="specialrequest"></textarea></label>
+    <button type="submit">Book Now</button>
+</form>
+<button><a href="https://wa.me/9779745281226?">Whatsapp us at +9779745281226</a></button>
+<!-- Apartment Details Section -->
+<div class="container" id="apartment-types">
+    <h2>Our Apartments</h2>
+    <div class="apartment-details">
+        <h3>Luxury One Bedroom Apartment</h3><ul>
+            <li>FULLY FURNISHED APARTMENT</li>
+            <li>QUIET and CALM PLACE near NATURE </li>
+            <li>DESK TO WORk , HOT SHOWERS,Fully equipped  Kitchen and fridge, READY To Move In</li>
+            <li>High SPEED FREE WIFI</li>
+            <li>COOL AIR Blowing BALCONY Rooms with Sunlight enters in Room and Balcony and a nice View Apartment</li>
+            <li>located in the heart of the Lakeside less than a single km from fewa lake great views of the Mountains.</li>
+            <li>few minutes walk from the Tourist Bus Park TO KATHMANDU and OTHER place, TAAN,VISSA OFFICE DAMSIDE ,</li> 
+            <li>Department store, international Medicare, Meditation forest area,yoga society,</li>
+            <li>facilitated grocery shops, ATM, coffee and bakery shops, restaurants nearby and provides a nice 'homely' feeling.and the Lakefront.</li> 
+            <h3>WhatsApp Call at +9779745281226 +9779846958184 </h3>
+        <p>Located in the heart of Lakeside with a beautiful balcony and all modern amenities.</p>
+    </div>
+    <div class="apartment-details">
+        <h3>Luxury Two Bedroom Apartment</h3> <ul>
+                <li>FULLY FURNISHED APARTMENT</li>
+                <li>QUIET and CALM PLACE near NATURE </li>
+                <li>DESK TO WORk , HOT SHOWERS,Fully equipped  Kitchen and fridge, READY To Move In</li>
+                <li>High SPEED FREE WIFI</li>
+                <li>COOL AIR Blowing BALCONY Rooms with Sunlight enters in Room and Balcony and a nice View Apartment</li>
+                <li>located in the heart of the Lakeside less than a single km from fewa lake great views of the Mountains.</li>
+
+                <li>One huge balcony two private bathroom one private kitchen and Two Bedroom One Living room </li>
+                <li>Price:90 thousand </li>
+                <li>few minutes walk from the Tourist Bus Park TO KATHMANDU and OTHER place, TAAN,VISSA OFFICE DAMSIDE ,</li> 
+            <li>Department store, international Medicare, Meditation forest area,yoga society,</li>
+            <li>facilitated grocery shops, ATM, coffee and bakery shops, restaurants nearby and provides a nice 'homely' feeling.and the Lakefront.</li> 
+            <h3>WhatsApp Call at +9779745281226 +9779846958184 </h3>
+        <p>Spacious apartment with two bedrooms, two bathrooms, and scenic views of Pokhara.</p>
+    </div>
+</div>
+
+  
+
+
+<div class="carousel-container">
+    <div class="carousel-slide" id="carouselSlide">
+        <div class="testimonial">
+            <p>"Comfort Suites was amazing! The rooms were clean and had a beautiful view of the lake. Highly recommended!"</p>
+            <h4>- John Doe</h4>
+        </div>
+        <div class="testimonial">
+            <p>"The best place to stay in Pokhara. The staff was very friendly, and the facilities were top-notch!"</p>
+            <h4>- Jane Smith</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Great experience! Convenient location and well-maintained apartments. Definitely coming back next time!"</p>
+            <h4>- Alex Brown</h4>
+        </div>
+    </div>
+    <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+    <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+</div>
+
+<script>
+    let currentIndex = 0;
+    const carouselSlide = document.getElementById('carouselSlide');
+    const testimonials = document.querySelectorAll('.testimonial');
+
+    function updateCarousel() {
+        const width = testimonials[0].clientWidth;
+        carouselSlide.style.transform = `translateX(-${currentIndex * width}px)`;
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : testimonials.length - 1;
+        updateCarousel();
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex < testimonials.length - 1) ? currentIndex + 1 : 0;
+        updateCarousel();
+    }
+
+    window.addEventListener('resize', updateCarousel);
+</script>
+
+<!-- <div class="balcony" id="home"> 
+</div><div class="painting"></div>
+<div class="kitchen"></div>
+<div class="nicebalcony"></div>
+
+<div class="readbooks"></div>
+<div class="hero"></div>
+<div class="view"></div>
+<div class="bathroom"></div> -->
+<h1>Image Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item"><img src="balcony.jpg" alt="Apartment at Pokhara nepalaffordable cheap luxury Balcony"></div>  <div class="gallery-item"><img src="view.jpg" alt="Apartment at Pokhara nepalaffordable cheap luxuryBalcony View"></div> <div class="gallery-item"><img src="painting.jpg" alt="Apartment at Pokhara nepalaffordable cheap luxuryPainting"></div>
+        <div class="gallery-item"><img src="nicebalcony.jpeg" alt="Apartment at Pokhara nepalaffordable cheap luxurynice balcony"></div>
+        <div class="gallery-item"><img src="kitchen.jpg" alt="Apartment at Pokhara nepalaffordable cheap luxurykitchen"></div>
+        
+       
+        <div class="gallery-item"><img src="read books.jpg" alt="Apartment at Pokhara nepalaffordable cheap luxuryread books"></div>
+      <div class="gallery-item"><img src="bathroom.jpg" alt="Apartment at Pokhara nepalaffordable cheap luxurybathroom"></div>
+    </div>
+<!-- About Us Section -->
+<div id="about" class="container">
+    <h2>About Us</h2>
+    <p>Comfort Suites Apartment provides luxury accommodations with modern amenities and beautiful views of Pokhara.</p>
+    <li>FULLY FURNISHED APARTMENT</li>
+            <li>QUIET and CALM PLACE near NATURE </li>
+            <li>DESK TO WORk , HOT SHOWERS,Fully equipped  Kitchen and fridge, READY To Move In</li>
+            <li>High SPEED FREE WIFI</li>
+            <li>COOL AIR Blowing BALCONY Rooms with Sunlight enters in Room and Balcony and a nice View Apartment</li>
+            <li>located in the heart of the Lakeside less than a single km from fewa lake great views of the Mountains.</li>
+            <li>few minutes walk from the Tourist Bus Park TO KATHMANDU and OTHER place, TAAN,VISSA OFFICE DAMSIDE ,</li> 
+            <li>Department store, international Medicare, Meditation forest area,yoga society,</li>
+            <li>facilitated grocery shops, ATM, coffee and bakery shops, restaurants nearby and provides a nice 'homely' feeling.and the Lakefront.</li> 
+            <h3>WhatsApp Call at +9779745281226 +9779846958184 </h3>
+        <p>Located in the heart of Lakeside with a beautiful balcony and all modern amenities.</p>
+</div>
+
+<!-- Contact Us Section -->
+<div id="contact" class="container">
+    <h2>Contact Us</h2>
+    <p>Email: dsaisimportant@gmail.com</p>
+    <p>Phone: +9779745281226</p>
+    <p>Address: Shantipatan, Lakeside, Pokhara</p>
+    <!-- Social Media Buttons -->
+<div style="display: flex; gap: 10px; justify-content: center; padding: 20px;">
+    <a href="https://www.facebook.com/profile.php?id=61553724800220" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;">
+    </a>
+    <a href="https://www.instagram.com/pokharaapartment/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;">
+    </a>
+</div>
+
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3515.966131970536!2d83.9623310872593!3d28.208341553322324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x399595003c1d77bd%3A0x6dca73e7daa0e99!2sComfort%20Suites(CS)%20Apartment%2C%206X58%2BJ4%2C%20Pokhara%2033700!3m2!1d28.209057599999998!2d83.9653263!5e0!3m2!1sen!2snp!4v1730648122741!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+    function bookApartment() {
+    const checkin = document.getElementById('checkin').value;
+    const checkout = document.getElementById('checkout').value;
+    const guests = document.getElementById('guests').value;
+    const guestschoice = document.getElementById('guestschoice').value;
+    const whatsappnumber = document.getElementById('whatsappnumber').value;
+    const specialrequest = document.getElementById('specialrequest').value;
+    const email=document.getElementById('email').value;
+    if (!checkin || !checkout || !guests || !whatsappnumber) {
+        alert("Please complete all required fields.");
+        return;
+    }
+
+    const message = `
+        Booking request!
+        Check-in: ${checkin}
+        Check-out: ${checkout}
+        Guests: ${guests} 
+        Apartment Type: ${guestschoice}
+        WhatsApp Number: ${whatsappnumber}
+        Special Request: ${specialrequest}
+        Email: ${email}
+    `;
+
+    // Encode the message and add a unique timestamp to prevent caching issues
+    const whatsappMessage = encodeURIComponent(message.trim());
+    const timestamp = new Date().getTime(); // Get current timestamp
+    const whatsappURL = `https://wa.me/9779745281226?text=${whatsappMessage}&t=${timestamp}`;
+
+    window.open(whatsappURL, "_blank");
+}
+const emailRecipient = "sujansubedi2060@gmail.com"; // Replace with the email to receive bookings
+    const emailSubject = encodeURIComponent("New Apartment Booking");
+    const emailBody = encodeURIComponent(message);
+    const mailtoURL = `mailto:${emailRecipient}?subject=${emailSubject}&body=${emailBody}`;
+    window.open(mailtoURL, "_blank");
+
+</script>
+
+
+</body>
+</html>
