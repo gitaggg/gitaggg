@@ -12,7 +12,7 @@
           "@context": "https://schema.org",
           "@type": "ApartmentComplex",
           "name": "Comfort Suites at Pokhara Lakeside",
-          "url": "https://example.com",
+          "url": "https://gitagautam.com",
           "description": "Comfort Suites offers luxury lakeside apartments in Pokhara with top amenities and stunning views.",
           "address": {
             "@type": "PostalAddress",
@@ -23,7 +23,7 @@
             "addressCountry": "NP"
           },
           "telephone": "+9779846481293",
-          "image": "https://example.com/images/comfort-suites.jpg",
+          "image": "https://gitagautam.com/images/comfort-suites.jpg",
           "geo": {
             "@type": "GeoCoordinates",
             "latitude": "28.2096",
@@ -38,8 +38,8 @@
         }
         </script>
         
-    <style>
-        /* General Styles */
+    <!-- <style>
+        General Styles
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -71,65 +71,111 @@
         }
         .book-now-btn {
             background-color: #ff6347;
-            padding: 10px 20px;
+            padding: 5px 10px;
             border-radius: 5px;
         }
         .book-now-btn:hover {
             background-color: #e04e39;
         }
+        nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Adjust background color as desired */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Adjust size to fit */
+    margin-right:5px; /* Space between logo and text */
+}
+
+.logo span {
+    font-size: 1.5em; /* Adjust font size */
+    font-weight: bold;
+    color: #333; /* Adjust text color */
+}
+.heros {
+    background-image: url('background.jpg'); /* Replace with the path to your background image */
+   
+            color:#1a73e8;
+           
+    background-size: cover; /* Cover the entire hero section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* White text for contrast  */
+    text-align: center;
+    padding: 0 20px; /* Add padding for mobile responsiveness */
+}
+
+.heros h1 {
+    font-size: 2.5em; /* Adjust font size */
+    font-weight: bold;
+    margin: 0;
+}
+
+.heros p {
+    font-size: 1.2em; /* Adjust font size */
+    margin-top: 10px;
+}
+
 
         /* Hamburger Menu */
-        .hamburger {
-            display: none;
-            cursor: pointer;
-        }
-        .hamburger div {
-            width: 25px;
-            height: 3px;
-            background-color: #fff;
-            margin: 5px;
-            transition: 0.4s;
-        }
+       /* Adjusts hamburger positioning on mobile */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute; /* Position it absolutely to nav */
+    right: 15px; /* Position it to the right within the nav */
+    top: 15px;
+    z-index: 2; /* Keeps it above other elements */
+}
 
-        /* Mobile Menu */
-        .mobile-menu {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            background-color: #1a73e8;
-            padding: 20px;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            right: 0;
-            z-index: 1;
-        }
-        .mobile-menu a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* Hamburger icon bars */
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: 0.4s;
+}
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            .hamburger {
-                display: block;
-            }
-        }
-        
+/* Mobile Menu styles */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #1a73e8;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Show hamburger and hide nav links on mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
         /* Hero Section */
-        .hero {
-            background: url('https://source.unsplash.com/random/1920x600/?luxury-apartment') no-repeat center center;
-            background-size: cover;
-            color: #fff;
-            padding: 100px 20px;
-            text-align: center;
-        }
-
+       
         /* Testimonials Section */
         .testimonials {
             background-color: #fff;
@@ -242,7 +288,8 @@
     vertical-align: middle;
 }
 
-    </style>
+
+    </style> -->
     <link rel="stylesheet" href="script.css">
 </head>
 <body>
@@ -256,9 +303,9 @@
 
 <!-- Navigation -->
 <nav>
-    <div class="logo">Comfort Suites Apartment</div>
+    <div class="logo"> <img src="apartments.png" alt=""> <span>CS Pokhara Apartment</span></div>
     <div class="nav-links">
-        <a href="bnb.html">Home</a>
+        <a href="index.html">Home</a>
         
         <a href="apartmenttypes.html">Apartment Types</a>
         <a href="contactus.html">About us Contact Us</a>
@@ -275,7 +322,7 @@
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-    <a href="bnb.html">Home</a>
+    <a href="index.html">Home</a>
    
     <a href="apartmenttypes.html">Apartment Types</a>
     <a href="contactus.html"> about us Contact Us</a>
@@ -283,12 +330,16 @@
     <a href="gblog.html">Blogs</a>
     <a href="gallery.html">Gallery</a>
 </div>
-<div class="hero" id="home">
-    <h1 style="color:#1a73e8;"><strong>
+<div class="heros" id="home">
+    <h1 ><strong>
+        
        <!-- actress -->
-    Welcome to Comfort Suites Apartment</strong></h1>
-    <p style="color: #1a73e8;">Experience luxury and comfort at your home away from home.</p>
+    Welcome to Comfort Suites CS Pokhara Apartment</strong></h1>
+    <p >Experience luxury and comfort at your home away from home.</p>
 </div>
+
+    
+</section>
 <form onsubmit="bookApartment(); return false;"> 
     <label>Check-in: <input type="date" id="checkin" required></label>
     <label>Check-out: <input type="date" id="checkout" required></label>
@@ -307,7 +358,7 @@
     <label>WhatsApp Number with country code: <input type="text" id="whatsappnumber" required></label>
     <label>write your Email <input type="text" id="email" required></label>
     <label>Special Request: <textarea id="specialrequest"></textarea></label>
-    <button type="submit">Book Now</button>
+    <button type="submit">ASK TO Book Now</button>
 </form>
 <button><a href="https://wa.me/9779745281226?">Whatsapp us at +9779745281226</a></button>
 <!-- Apartment Details Section -->
@@ -345,7 +396,25 @@
         <p>Spacious apartment with two bedrooms, two bathrooms, and scenic views of Pokhara.</p>
     </div>
 </div>
-
+<section>
+    <h1>Trusted as Best Superhost ON</h1>
+    <div class="trust-logos">
+        
+        <a href="YOUR_AIRBNB_LINK" target="_blank" rel="noopener noreferrer">
+            <img src="airbnb.jpg" alt="Airbnb">
+        </a>
+        <a href="YOUR_TRIPADVISOR_LINK" target="_blank" rel="noopener noreferrer">
+            <img src="tripadvisor.png" alt="TripAdvisor">
+        </a>
+        <a href="YOUR_BOOKING_LINK" target="_blank" rel="noopener noreferrer">
+            <img src="booking.jpg" alt="Booking.com">
+        </a>
+      
+      
+        <a href="YOUR_AGODA_LINK" target="_blank" rel="noopener noreferrer">
+            <img src="Agoda.png" alt="Expedia Agoda">
+        </a>
+    </div>
   
 
 
@@ -430,7 +499,7 @@
 <!-- Contact Us Section -->
 <div id="contact" class="container">
     <h2>Contact Us</h2>
-    <p>Email: dsaisimportant@gmail.com</p>
+    <p>Email: cspokharaapartment@gmail.com</p>
     <p>Phone: +9779745281226</p>
     <p>Address: Shantipatan, Lakeside, Pokhara</p>
     <!-- Social Media Buttons -->
