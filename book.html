@@ -1,0 +1,66 @@
+<form onsubmit="bookApartment(); return false;"> 
+    <label>Check-in: <input type="date" id="checkin" required></label>
+    <label>Check-out: <input type="date" id="checkout" required></label>
+    <label for="guests">Number of Guests:</label>
+    <select id="guests">
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+    </select>
+    <label for="guestschoice">Apartment type:</label>
+    <select id="guestschoice">
+        <option value="One Bedroom Apartment">One Bedroom Apartment</option>
+        <option value="Two Bedroom Apartment">Two Bedroom Apartment</option>
+    </select>
+    <label>WhatsApp Number with country code: <input type="text" id="whatsappnumber" required></label>
+    <label>Write your Email: <input type="text" id="email" required></label>
+    <label>Special Request: <textarea id="specialrequest"></textarea></label>
+    <button type="submit">Ask to Book Now</button>
+</form>
+
+<script>
+    function bookApartment() {
+        const checkin = document.getElementById('checkin').value;
+        const checkout = document.getElementById('checkout').value;
+        const guests = document.getElementById('guests').value;
+        const guestschoice = document.getElementById('guestschoice').value;
+        const whatsappnumber = document.getElementById('whatsappnumber').value;
+        const specialrequest = document.getElementById('specialrequest').value;
+        const email = document.getElementById('email').value;
+
+        // Validate required fields
+        if (!checkin || !checkout || !guests || !whatsappnumber || !email) {
+            alert("Please complete all required fields.");
+            return;
+        }
+
+        // Construct the message
+        const message = `
+            Booking request!
+            Check-in: ${checkin}
+            Check-out: ${checkout}
+            Guests: ${guests} 
+            Apartment Type: ${guestschoice}
+            WhatsApp Number: ${whatsappnumber}
+            Special Request: ${specialrequest}
+            Email: ${email}
+        `;
+
+        // Encode the message for WhatsApp URL
+        const whatsappMessage = encodeURIComponent(message.trim());
+        const whatsappURL = `https://wa.me/9779745281226?text=${whatsappMessage}`;
+
+        // Open WhatsApp to send message
+        window.open(whatsappURL, "_blank");
+
+        // Construct the email link
+        const emailRecipient = "sujansubedi2060@gmail.com"; // Replace with the actual email
+        const emailSubject = encodeURIComponent("New Apartment Booking");
+        const emailBody = encodeURIComponent(message.trim());
+        const mailtoURL = `mailto:${emailRecipient}?subject=${emailSubject}&body=${emailBody}`;
+
+        // Open mailto link for email
+        window.open(mailtoURL, "_blank");
+    }
+</script>
