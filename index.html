@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peaceful Lakeside Apartment | Pokhara's Hidden Gem | 5⭐ Rated</title>
     <meta name="description" content="Top-rated furnished apartment in Pokhara Lakeside. Private kitchen, balcony, fast WiFi. Perfect for digital nomads, couples & families. 74+ guests rated us 5 stars!">
+
+ 
+ 
+ 
+ 
+ 
+ 
+    <!-- SEO Meta -->
+  <meta name="keywords" content="Pokhara apartment, Lakeside Pokhara stay, Digital Nomad Nepal, Airbnb Pokhara, Furnished Apartment Pokhara">
+  <meta name="author" content="Comfort Suites Apartment">
+  
+  <!-- Social Share -->
+  <meta property="og:title" content="Peaceful Lakeside Apartment | Pokhara's Hidden Gem | 5⭐ Rated">
+  <meta property="og:description" content="Stay in Pokhara's top-rated apartment with balcony, kitchen, WiFi, & stunning views. Perfect for nomads, couples & families.">
+  <meta property="og:image" content="your-thumbnail.jpg">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta name="twitter:card" content="summary_large_image">
+
     <style>
         * {
             margin: 0;
@@ -397,9 +415,103 @@
             border-right: none;
             transform: rotate(-45deg);
         }
+         nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      z-index: 1000;
+      backdrop-filter: blur(6px);
+    }
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    /* Floating action buttons */
+    .floating-btns {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 2000;
+    }
+    .floating-btns a {
+      background: #25D366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .floating-btns a.call-btn {
+      background: #ff6b6b;
+    }
+    .floating-btns a:hover {
+      transform: scale(1.05);
+    }
+
+    /* Urgency banner */
+    .urgency-banner {
+      background: linear-gradient(135deg, #ff6b6b, #ffa726);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { background-size: 100% 100%; }
+      50% { background-size: 105% 105%; }
+      100% { background-size: 100% 100%; }
+    }
+
+    /* Gallery hover */
+    .photo-gallery img {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .photo-gallery img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
     </style>
 </head>
 <body>
+<nav>
+    <a href="#features">Features</a>
+    <a href="#location">Location</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <!-- Floating WhatsApp & Call -->
+  <div class="floating-btns">
+    <a href="https://wa.me/9779745281226" target="_blank">📱 WhatsApp</a>
+    <a href="tel:+9779745281226" class="call-btn">📞 Call Now</a>
+  </div>
+
+  <!-- Keep your full hero/sections here (unchanged)... -->
+
+  <!-- Urgency Banner before footer -->
+  <div class="urgency-banner">
+    🚨 Limited Rooms Available! Book Early & Get Discounts 🚨
+  </div>
     <div class="floating-elements">
         <div class="floating-element">🏔️</div>
         <div class="floating-element">🌿</div>
@@ -421,7 +533,7 @@
                 <a href="https://wa.me/9779745281226" class="btn btn-primary whatsapp-btn">
                     📱 Book via WhatsApp
                 </a>
-                <a href="#gallery" class="btn btn-secondary">View Photos</a>
+                <a href="#gallery" class="btn btn-secondary">View Inside Design Features</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -473,10 +585,10 @@
         </div>
     </section>
 
-    <section class="section" id="gallery">
-        <h2>Photo Gallery</h2>
+    <section class="section" id="features">
+        <h2>Features</h2>
         <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem; color: #666;">
-            Photos showcasing the balcony, bedroom, kitchen, bathroom, and rooftop views
+            Design showcasing the balcony, bedroom, kitchen, bathroom, and rooftop.
         </p>
         <div class="photo-gallery">
             <div class="photo-placeholder">Balcony View</div>
@@ -494,38 +606,62 @@
         </div>
     </section>
 
-    <section class="section">
-        <div class="location-info">
-            <h2 style="color: rgb(203, 192, 228); margin-bottom: 2rem;">🎯 Prime Location Benefits</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; text-align: left;">
-                <div>
-                    <h4>🏊‍♂️ Fewa Lake</h4>
-                    <p>5 minute walk</p>
-                </div>
-                <div>
-                    <h4>🌳 Basundhara Green Park</h4>
-                    <p>6 minute walk</p>
-                </div>
-                <div>
-                    <h4>💧 Devi's Falls</h4>
-                    <p>3.7 km away</p>
-                </div>
-                <div>
-                    <h4>🕉️ Peace Pagoda</h4>
-                    <p>8.5 km away</p>
-                </div>
-                <div>
-                    <h4>✈️ Pokhara Airport</h4>
-                    <p>2 km away</p>
-                </div>
-                <div>
-                    <h4>🏔️ Mountain Museum</h4>
-                    <p>3.6 km away</p>
-                </div>
+    <section class="section" id="location">
+    <div class="location-info">
+        <h2 style="color: rgb(203, 192, 228); margin-bottom: 2rem; 
+                   text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">
+          🎯 Prime Location Benefits
+        </h2>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; text-align: left;">
+            <div>
+                <h4>🏊‍♂️ Fewa Lake</h4>
+                <p>5 minute walk</p>
             </div>
-            <p style="margin-top: 2rem; font-size: 1.1rem;">Plus cafés, grocery stores, yoga studios, and clinics nearby!</p>
+            <div>
+                <h4>🌳 Basundhara Green Park</h4>
+                <p>6 minute walk</p>
+            </div>
+            <div>
+                <h4>💧 Devi's Falls</h4>
+                <p>3.7 km away</p>
+            </div>
+            <div>
+                <h4>🕉️ Peace Pagoda</h4>
+                <p>8.5 km away</p>
+            </div>
+            <div>
+                <h4>✈️ Pokhara Airport</h4>
+                <p>2 km away</p>
+            </div>
+            <div>
+                <h4>🏔️ Mountain Museum</h4>
+                <p>3.6 km away</p>
+            </div>
         </div>
-    </section>
+
+        <p style="margin-top: 2rem; font-size: 1.1rem;">
+            Plus cafés, grocery stores, yoga studios, and clinics nearby!  
+            <br>
+            🌐 <a href="https://share.google/YINizMq1jLCffMwcz" target="_blank" style="color: #ffd700; text-decoration: underline;">
+                View on Google Maps
+            </a>
+        </p>
+
+        <!-- Embedded Google Map -->
+        <div style="margin-top: 2rem; border-radius: 15px; overflow: hidden;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.9424080468007!2d83.96275137424013!3d28.209062303187068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595003c1d77bd%3A0x6dca73e7daa0e99!2sComfort%20Suites(CS)%20Pokhara%20Apartment!5e0!3m2!1sen!2snp!4v1759218608240!5m2!1sen!2snp" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
 
     <section class="section">
         <h2>Guest Testimonials</h2>
@@ -545,7 +681,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="contact" >
         <div class="contact-section">
             <h2 style="margin-bottom: 1rem;">Book Your Perfect Pokhara Stay</h2>
             <p style="font-size: 1.2rem; margin-bottom: 2rem;">Discounts available for early bookings • Flexible daily, weekly & monthly stays</p>
