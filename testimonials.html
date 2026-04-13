@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guest testimonials for Comfort Suites Apartment Pokhara - 4.9★ rating, 96+ reviews from international travelers">
+    <meta name="og:title" content="Reviews & Testimonials - Comfort Suites Apartment Pokhara">
+    <meta name="og:description" content="Real reviews from real guests around the world - 4.9 stars on Airbnb">
+    
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-android-chrome-512x512.png">
+    <title>Reviews & Testimonials - Comfort Suites Apartment Pokhara</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="assets/logo.png" alt="Comfort Suites Logo" style="height: 40px; margin-right: 0.5rem; vertical-align: middle;">
+                <span>Comfort Suites Apartment</span>
+            </div>
+            
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="index.html#why-us" class="navbar-link">Why Choose Us</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="apartments.html" class="navbar-link">Apartments ▼</a>
+                    <div class="dropdown-menu">
+                        <a href="apartment-summit.html" class="dropdown-item">Himalayan Summit</a>
+                        <a href="apartment-nest.html" class="dropdown-item">Peaceful Nest</a>
+                        <a href="apartment-panorama.html" class="dropdown-item">Panorama OpenAir</a>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <a href="book.html" class="navbar-cta">Book Now</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="testimonials.html" class="navbar-link">Testimonials</a>
+                </li>
+            </ul>
+
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section style="padding: 100px 0 50px; background: linear-gradient(135deg, rgba(26, 46, 40, 0.7), rgba(44, 74, 62, 0.7)), url('assets/common/common3.jpg') center/cover; margin-top: 70px; color: white; text-align: center;">
+        <div class="container">
+            <h1 style="color: white; margin-bottom: 1rem;">Loved by Travelers Worldwide</h1>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                <div>
+                    <p style="font-size: 2rem; font-weight: 700; color: var(--color-accent);">⭐ 4.9</p>
+                    <p style="color: rgba(255,255,255,0.9);">Average Rating</p>
+                </div>
+                <div>
+                    <p style="font-size: 2rem; font-weight: 700; color: var(--color-accent);">96+</p>
+                    <p style="color: rgba(255,255,255,0.9);">Guest Reviews</p>
+                </div>
+                <div>
+                    <p style="font-size: 2rem; font-weight: 700; color: var(--color-accent);">🏆</p>
+                    <p style="color: rgba(255,255,255,0.9);">Airbnb Superhost</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTER BUTTONS -->
+    <section class="section">
+        <div class="container">
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                <button class="filter-btn active" data-filter="all" style="background-color: var(--color-primary); color: white; border: 2px solid var(--color-primary); padding: 0.6rem 1.2rem; border-radius: 2rem; cursor: pointer; font-weight: 600; transition: var(--transition);">
+                    All Reviews
+                </button>
+                <button class="filter-btn" data-filter="short-stay" style="background-color: transparent; color: var(--color-primary); border: 2px solid var(--color-primary); padding: 0.6rem 1.2rem; border-radius: 2rem; cursor: pointer; font-weight: 600; transition: var(--transition);">
+                    Short Stay
+                </button>
+                <button class="filter-btn" data-filter="long-stay" style="background-color: transparent; color: var(--color-primary); border: 2px solid var(--color-primary); padding: 0.6rem 1.2rem; border-radius: 2rem; cursor: pointer; font-weight: 600; transition: var(--transition);">
+                    Long Stay
+                </button>
+                <button class="filter-btn" data-filter="remote-work" style="background-color: transparent; color: var(--color-primary); border: 2px solid var(--color-primary); padding: 0.6rem 1.2rem; border-radius: 2rem; cursor: pointer; font-weight: 600; transition: var(--transition);">
+                    Remote Work
+                </button>
+            </div>
+
+            <style>
+                .filter-btn.active {
+                    background-color: var(--color-primary) !important;
+                    color: white !important;
+                }
+
+                .filter-btn:hover {
+                    background-color: var(--color-primary);
+                    color: white;
+                }
+
+                .testimonial-card {
+                    animation: fadeInUp 0.6s ease-out;
+                }
+            </style>
+
+            <!-- TESTIMONIALS GRID -->
+            <div class="testimonials-grid">
+                <!-- Sarah M - USA - Short Stay -->
+                <div class="testimonial-card" data-type="short-stay">
+                    <div class="testimonial-header">
+                        <div>
+                            <div class="testimonial-author">Sarah M. 🇺🇸</div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"The perfect base for exploring Pokhara! The mountain views from the balcony are incredible, WiFi is super fast, and the host is incredibly responsive and helpful. Already booked again for next year!"</p>
+                    <span class="testimonial-stay-type">Short Stay (7 days)</span>
+                </div>
+
+                <!-- Thomas K - Germany - Remote Work -->
+                <div class="testimonial-card" data-type="remote-work">
+                    <div class="testimonial-header">
+                        <div>
+                            <div class="testimonial-author">Thomas K. 🇩🇪</div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"As a digital nomad, I couldn't ask for better. Reliable WiFi, quiet workspace, great amenities, and the rooftop views are stunning for sunset. Best value for money compared to hotels."</p>
+                    <span class="testimonial-stay-type">Remote Work (3 weeks)</span>
+                </div>
+
+                <!-- Emily & James - UK - Short Stay -->
+                <div class="testimonial-card" data-type="short-stay">
+                    <div class="testimonial-header">
+                        <div>
+                            <div class="testimonial-author">Emily & James 🇬🇧</div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Our honeymoon was perfect here! The Himalayan Summit room is absolutely stunning. Woke up to mountain views every morning. Such warm hospitality from the family. Highly recommend!"</p>
+                    <span class="testimonial-stay-type">Short Stay (5 days)</span>
+                </div>
+
+                <!-- Marco R - Australia - Long Stay -->
+                <div class="testimonial-card" data-type="long-stay">
+                    <div class="testimonial-header">
+                        <div>
+                            <div class="testimonial-author">Marco R. 🇦🇺</div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Whole month here and it was the best decision! The monthly rate is unbeatable, kitchen is fully equipped, laundry service is convenient. Felt like a real home, not a hotel. Will definitely return."</p>
+                    <span class="testimonial-stay-type">Long Stay (30 days)</span>
+                </div>
+
+                <!-- Julia M - Spain - Remote Work -->
+                <div class="testimonial-card" data-type="remote-work">
+                    <div class="testimonial-header">
+                        <div>
+                            <div class="testimonial-author">Julia M. 🇪🇸</div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Perfect for remote work! The WiFi speed is incredible (tested 150+ Mbps), backup internet never fails, and the peaceful balcony is ideal for zoom calls. Spent 2 weeks here, felt so productive!"</p>
+                    <span class="testimonial-stay-type">Remote Work (14 days)</span>
+                </div>
+
+                <!-- David L - USA - Long Stay -->
+                <div class="testimonial-card" data-type="long-stay">
+                    <div class="testimonial-header">
+                        <div>
+                            <div class="testimonial-author">David L. 🇺🇸</div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Stayed 6 weeks during monsoon season and loved every minute. Cozy apartment, terrific hosts, 24/7 hot water, and the price for long-term is unbeatable. Life in Pokhara made easy."</p>
+                    <span class="testimonial-stay-type">Long Stay (42 days)</span>
+                </div>
+
+                <!-- Ana P - Korea - Short Stay -->
+                <div class="testimonial-card" data-type="short-stay">
+                    <div class="testimonial-header">
+                        <div>
+                            <div class="testimonial-author">Ana P. 🇰🇷</div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Beautiful apartment with stunning views! Very clean, comfortable, and the location is perfect for accessing Fewa Lake and restaurants. The family is so welcoming and helpful!"</p>
+                    <span class="testimonial-stay-type">Short Stay (4 days)</span>
+                </div>
+
+                <!-- Chris T - Canada - Remote Work -->
+                <div class="testimonial-card" data-type="remote-work">
+                    <div class="testimonial-header">
+                        <div>
+                            <div class="testimonial-author">Chris T. 🇨🇦</div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Excellent remote work setup. Fast, reliable internet, good desk space, and peaceful surroundings. The location is central to everything. Stayed a month and considering extending. Highly recommended!"</p>
+                    <span class="testimonial-stay-type">Remote Work (27 days)</span>
+                </div>
+
+                <!-- Sophie R - France - Short Stay -->
+                <div class="testimonial-card" data-type="short-stay">
+                    <div class="testimonial-header">
+                        <div>
+                            <div class="testimonial-author">Sophie R. 🇫🇷</div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Charming apartment with authentic Pokhara vibes. The hosts are genuinely kind, the views are magical, and everything is so well taken care of. Absolutely will come back!"</p>
+                    <span class="testimonial-stay-type">Short Stay (6 days)</span>
+                </div>
+
+                <!-- Raj M - India - Long Stay -->
+                <div class="testimonial-card" data-type="long-stay">
+                    <div class="testimonial-header">
+                        <div>
+                            <div class="testimonial-author">Raj M. 🇮🇳</div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Spent 45 days here and it felt like home. Family-run business means real personal care. Full kitchen saved me so much money on eating out. Highly recommended for extended stays!"</p>
+                    <span class="testimonial-stay-type">Long Stay (45 days)</span>
+                </div>
+
+                <!-- Lisa K - Germany - Remote Work -->
+                <div class="testimonial-card" data-type="remote-work">
+                    <div class="testimonial-header">
+                        <div>
+                            <div class="testimonial-author">Lisa K. 🇩🇪</div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Perfect for digital nomads! Backup WiFi is a lifesaver, the laundry service is convenient, and the peaceful atmosphere helps with focus. Best retreat I've found in Nepal."</p>
+                    <span class="testimonial-stay-type">Remote Work (21 days)</span>
+                </div>
+
+                <!-- Michael J - USA - Short Stay -->
+                <div class="testimonial-card" data-type="short-stay">
+                    <div class="testimonial-header">
+                        <div>
+                            <div class="testimonial-author">Michael J. 🇺🇸</div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Amazing location, fantastic views, spotless rooms. Airport pickup was smooth, check-in was easy, and the hosts anticipated all our needs. Worth every rupee!"</p>
+                    <span class="testimonial-stay-type">Short Stay (8 days)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section section--large" style="background: linear-gradient(135deg, rgba(26, 46, 40, 0.7), rgba(44, 74, 62, 0.7)), url('assets/common/common6.jpg') center/cover;">
+        <div class="container">
+            <div style="color: white; text-align: center;">
+                <h2 style="color: white;">Join Hundreds of Happy Guests</h2>
+                <p style="font-size: 1.1rem; margin: 2rem 0; color: rgba(255,255,255,0.95);">Your perfect Pokhara stay is just one booking away. Come experience the comfort, views, and hospitality that keeps guests coming back.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="book.html" class="btn btn-primary">Send Inquiry</a>
+                    <a href="https://www.airbnb.com/rooms/1295640956409794135?viralityEntryPoint=1&s=76" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Book on Airbnb</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Comfort Suites</h4>
+                    <p>Live Peacefully. Work Happily. Explore Nepal Easily.</p>
+                    <p><strong>Street 45 via Pipal Tree</strong><br>
+                    Shree Krishna Marg (Between Street 5 & 6)<br>
+                    Lakeside, Pokhara, Nepal</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>
+                        <strong>WhatsApp:</strong> <a href="https://wa.me/9779745281226" target="_blank" rel="noopener noreferrer">+977 9745281226</a><br>
+                        <strong>Phone:</strong> <a href="tel:+977-9846481293">+977 9846481293</a><br>
+                        <strong>Email:</strong> <a href="mailto:pokharaapartmentcs@gmail.com">pokharaapartmentcs@gmail.com</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="apartments.html">Apartments</a></li>
+                        <li><a href="book.html">Book Now</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                        <li><a href="https://maps.app.goo.gl/1V1r62d1wEGPuDAd9" target="_blank" rel="noopener noreferrer">Our Location</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links" style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                        <a href="https://www.facebook.com/profile.php?id=61553724800220" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
+                        <a href="https://www.instagram.com/pokharaapartment/" target="_blank" rel="noopener noreferrer" title="Instagram">📸</a>
+                        <a href="https://vm.tiktok.com/ZS9L63wGAqBwc-gpchj/" target="_blank" rel="noopener noreferrer" title="TikTok">🎵</a>
+                        <a href="https://www.linkedin.com/company/comfort-suites-apartment-pokhara-lakeside/" target="_blank" rel="noopener noreferrer" title="LinkedIn">in</a>
+                    </div>
+                    <ul>
+                        <li><a href="https://www.airbnb.com/rooms/1559018492668062855?unique_share_id=9c74e467-6284-4f77-87f2-aaaaa4966e3e&viralityEntryPoint=1&s=76" target="_blank" rel="noopener noreferrer">Airbnb </a></li>
+                        <li><a href="https://maps.app.goo.gl/1V1r62d1wEGPuDAd9" target="_blank" rel="noopener noreferrer">Google Maps(Top Rated)</a></li>
+                        <li><a href="https://wa.me/9779745281226" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+               <p>&copy; 2021–<script>document.write(new Date().getFullYear())</script> Comfort Suites Apartment Pokhara. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         LIGHTBOX
+         ======================================== -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-container">
+            <img class="lightbox-image" src="" alt="Lightbox image">
+            <button class="lightbox-close">✕</button>
+            <button class="lightbox-nav lightbox-prev">‹</button>
+            <button class="lightbox-nav lightbox-next">›</button>
+        </div>
+    </div>
+
+    <!-- ========================================
+         WHATSAPP FLOATING BUTTON
+         ======================================== -->
+    <a href="https://wa.me/9779745281226" target="_blank" rel="noopener noreferrer" class="whatsapp-float">
+        <svg viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.99 1.51A9.879 9.879 0 003.51 7.429 9.86 9.86 0 002.012 12a9.86 9.86 0 001.498 4.571A9.879 9.879 0 007.057 20.49a9.87 9.87 0 004.99 1.51h.004a9.87 9.87 0 005.001-1.512 9.879 9.879 0 003.534-3.458 9.86 9.86 0 001.498-4.571 9.86 9.86 0 00-1.498-4.571 9.879 9.879 0 00-3.534-3.458 9.87 9.87 0 00-5.001-1.51"/>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your stay at Comfort Suites Apartment Pokhara - Premium furnished apartments in Lakeside, Nepal">
+    <meta name="og:title" content="Book Now - Comfort Suites Apartment Pokhara">
+    <meta name="og:description" content="Send your booking inquiry for luxury apartments with mountain views">
+    
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-android-chrome-512x512.png">
+    <title>Book Your Stay - Comfort Suites Apartment Pokhara</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="assets/logo.png" alt="Comfort Suites Logo" style="height: 40px; margin-right: 0.5rem; vertical-align: middle;">
+                <span>Comfort Suites Apartment</span>
+            </div>
+            
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="index.html#why-us" class="navbar-link">Why Choose Us</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="apartments.html" class="navbar-link">Apartments ▼</a>
+                    <div class="dropdown-menu">
+                        <a href="apartment-summit.html" class="dropdown-item">Himalayan Summit</a>
+                        <a href="apartment-nest.html" class="dropdown-item">Peaceful Nest</a>
+                        <a href="apartment-panorama.html" class="dropdown-item">Panorama OpenAir</a>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <a href="book.html" class="navbar-cta">Book Now</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="testimonials.html" class="navbar-link">Testimonials</a>
+                </li>
+            </ul>
+
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section style="padding: 120px 0 60px; background: linear-gradient(135deg, rgba(26, 46, 40, 0.7), rgba(44, 74, 62, 0.7)), url('assets/common/common1.jpg') center/cover; margin-top: 70px; color: white; text-align: center;">
+        <div class="container">
+            <h1 style="color: white; margin-bottom: 1rem;">Book Your Pokhara Stay</h1>
+            <p style="font-size: 1.1rem;">We'll respond within 2 hours via WhatsApp or email</p>
+        </div>
+    </section>
+
+    <!-- BOOKING FORM SECTION -->
+    <section class="section section--large">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto;">
+                <!-- Direct WhatsApp CTA -->
+                <div style="background: #D4EDDA; border: 1px solid #C3E6CB; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; text-align: center;">
+                    <p style="color: #155724; margin-bottom: 1rem; font-weight: 600;">Prefer instant messaging?</p>
+                    <a href="https://wa.me/9779745281226" target="_blank" rel="noopener noreferrer" class="btn btn-block" style="background-color: #25D366; color: white; border-color: #25D366; text-align: center;">
+                        💬 Chat on WhatsApp Now
+                    </a>
+                </div>
+
+                <!-- Form -->
+               <form id="inquiryForm" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="83bdc83b-8a10-4159-9a12-f94544f55635">
+    <input type="hidden" name="subject" value="New Booking Inquiry - Comfort Suites Pokhara">
+    <input type="hidden" name="from_name" value="Comfort Suites Website">
+    <input type="hidden" name="redirect" value="false">
+                    <div class="form-success">
+                        <strong>✓ Thank you!</strong> We've received your inquiry. We'll respond within 2 hours via WhatsApp or email.
+                    </div>
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+                        <div class="form-error"></div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        <div class="form-error"></div>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <div class="phone-input-wrapper">
+                            <select id="countryCode" name="countryCode" required>
+                               
+                            </select>
+                            <input type="tel" id="phone" name="phone" placeholder="9741234567" required>
+                        </div>
+                        <div class="form-error"></div>
+                    </div>
+
+                    <!-- Apartment Preference -->
+                    <div class="form-group">
+                        <label for="apartment">Apartment Preference</label>
+                        <select id="apartment" name="apartment">
+                            <option value="any">Any - We'll suggest the best fit</option>
+                            <option value="summit">Himalayan Summit (Premium with views)</option>
+                            <option value="nest">Peaceful Nest (Quiet & eco-friendly)</option>
+                            <option value="panorama">Panorama OpenAir (Wide balcony views)</option>
+                        </select>
+                    </div>
+
+                    <!-- Check-in Date -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkIn">Check-in Date *</label>
+                            <input type="date" id="checkIn" name="checkIn" required>
+                            <div class="form-error"></div>
+                        </div>
+
+                        <!-- Check-out Date -->
+                        <div class="form-group">
+                            <label for="checkOut">Check-out Date *</label>
+                            <input type="date" id="checkOut" name="checkOut" required>
+                            <div class="form-error"></div>
+                        </div>
+                    </div>
+
+                    <!-- Number of Guests -->
+                    <div class="form-group">
+                        <label for="guests">Number of Guests *</label>
+                        <input type="number" id="guests" name="guests" min="1" max="6" value="1" required>
+                        <div class="form-error"></div>
+                    </div>
+
+                    <!-- Stay Type -->
+                    <div class="form-group">
+                        <label>Stay Type</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="short" name="stayType" value="short-stay" checked>
+                                <label for="short">Short Stay (few nights)</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="long" name="stayType" value="long-stay">
+                                <label for="long">Long Stay (14-26 nights)</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="monthly" name="stayType" value="monthly">
+                                <label for="monthly">4 weeks (28+ nights)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Special Requests -->
+                    <div class="form-group">
+                        <label for="requests">Special Requests (Optional)</label>
+                        <textarea id="requests" name="requests" placeholder="E.g., High chair needed, dietary requirements, pet arrival, early check-in, etc."></textarea>
+                    </div>
+
+                    <!-- How did you hear about us -->
+                    <div class="form-group">
+                        <label for="source">How did you hear about us?</label>
+                        <select id="source" name="source">
+                            <option value="">-- Select an option --</option>
+                            <option value="google">Google Search</option>
+                            <option value="airbnb">Airbnb</option>
+                            <option value="booking">Booking.com</option>
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="friend">Friend Referral</option>
+                            <option value="social">Facebook</option>
+                            <option value="social">Other Social Media</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-block">Send My Inquiry</button>
+
+                    <p style="font-size: 0.85rem; color: var(--color-muted); margin-top: 1rem; text-align: center;">
+                        We will respond normally within 1 hours. You can also reach us directly at <a href="https://wa.me/9779745281226" target="_blank" rel="noopener noreferrer">WhatsApp</a>.
+                    </p>
+                </form>
+
+                <!-- Contact Cards -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem;">
+                    <div style="background: var(--color-cream); padding: 1.5rem; border-radius: 0.5rem; text-align: center;">
+                        <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">💬</p>
+                        <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">WhatsApp Chat</h4>
+                        <a href="https://wa.me/9779745281226" target="_blank" rel="noopener noreferrer" style="color: #25D366; font-weight: 600;">+977 9745281226</a>
+                    </div>
+                    <div style="background: var(--color-cream); padding: 1.5rem; border-radius: 0.5rem; text-align: center;">
+                        <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">✉️</p>
+                        <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Email</h4>
+                        <a href="mailto:pokharaapartmentcs@gmail.com" style="color: var(--color-secondary); font-weight: 600;">pokharaapartmentcs@gmail.com</a>
+                    </div>
+                </div>
+
+                <!-- Quick Booking Links -->
+                <div style="background: var(--color-primary); color: white; padding: 2rem; border-radius: 0.5rem; margin-top: 2rem; text-align: center;">
+                    <p style="color: white; margin-bottom: 1.5rem; font-weight: 600;">Or book instantly on these platforms:</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://www.airbnb.com/rooms/1559018492668062855?unique_share_id=9c74e467-6284-4f77-87f2-aaaaa4966e3e&viralityEntryPoint=1&s=76" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="flex: 1; min-width: 150px;">Airbnb</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Comfort Suites</h4>
+                    <p>Live Peacefully. Work Happily. Explore Nepal Easily.</p>
+                    <p><strong>Street 45 via Pipal Tree</strong><br>
+                    Shree Krishna Marg (Between Street 5 & 6)<br>
+                    Lakeside, Pokhara, Nepal</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>
+                        <strong>WhatsApp:</strong> <a href="https://wa.me/9779745281226" target="_blank" rel="noopener noreferrer">+977 9745281226</a><br>
+                        <strong>Phone:</strong> <a href="tel:+977-9846481293">+977 9846481293</a><br>
+                        <strong>Email:</strong> <a href="mailto:pokharaapartmentcs@gmail.com">pokharaapartmentcs@gmail.com</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="apartments.html">Apartments</a></li>
+                        <li><a href="book.html">Book Now</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                        <li><a href="https://maps.app.goo.gl/1V1r62d1wEGPuDAd9" target="_blank" rel="noopener noreferrer">Our Location</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links" style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                        <a href="https://www.facebook.com/profile.php?id=61553724800220" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
+                        <a href="https://www.instagram.com/pokharaapartment/" target="_blank" rel="noopener noreferrer" title="Instagram">📸</a>
+                        <a href="https://vm.tiktok.com/ZS9L63wGAqBwc-gpchj/" target="_blank" rel="noopener noreferrer" title="TikTok">🎵</a>
+                        <a href="https://www.linkedin.com/company/comfort-suites-apartment-pokhara-lakeside/" target="_blank" rel="noopener noreferrer" title="LinkedIn">in</a>
+                    </div>
+                    <ul>
+                        <li><a href="https://www.airbnb.com/rooms/1559018492668062855?unique_share_id=9c74e467-6284-4f77-87f2-aaaaa4966e3e&viralityEntryPoint=1&s=76" target="_blank" rel="noopener noreferrer">Airbnb </a></li>
+                        <li><a href="https://maps.app.goo.gl/1V1r62d1wEGPuDAd9" target="_blank" rel="noopener noreferrer">Google Maps(Top Rated)</a></li>
+                        <li><a href="https://wa.me/9779745281226" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+               <p>&copy; 2021–<script>document.write(new Date().getFullYear())</script> Comfort Suites Apartment Pokhara. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         LIGHTBOX
+         ======================================== -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-container">
+            <img class="lightbox-image" src="" alt="Lightbox image">
+            <button class="lightbox-close">✕</button>
+            <button class="lightbox-nav lightbox-prev">‹</button>
+            <button class="lightbox-nav lightbox-next">›</button>
+        </div>
+    </div>
+
+    <!-- ========================================
+         WHATSAPP FLOATING BUTTON
+         ======================================== -->
+    <a href="https://wa.me/9779745281226" target="_blank" rel="noopener noreferrer" class="whatsapp-float">
+        <svg viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.99 1.51A9.879 9.879 0 003.51 7.429 9.86 9.86 0 002.012 12a9.86 9.86 0 001.498 4.571A9.879 9.879 0 007.057 20.49a9.87 9.87 0 004.99 1.51h.004a9.87 9.87 0 005.001-1.512 9.879 9.879 0 003.534-3.458 9.86 9.86 0 001.498-4.571 9.86 9.86 0 00-1.498-4.571 9.879 9.879 0 00-3.534-3.458 9.87 9.87 0 00-5.001-1.51"/>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
